@@ -21,4 +21,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction
     Tasks:
     1. （参考Sample下01-Deubg的index.html进行理解, 消化其知识)
 
-3. 
+3. Closure 背包的问题
+    [详细解释英文](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+
+    [详细解释中文](https://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
+
+4. var vs let vs const
+
+     [Let介绍](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+
+     [作用区比较](https://blog.csdn.net/tjcjava/article/details/90480473)
