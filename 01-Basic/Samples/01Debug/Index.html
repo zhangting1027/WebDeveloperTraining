@@ -19,12 +19,26 @@
         }
       }
     }
-    console.log(a.fn());
-    console.log((a.fn())());
-    console.log(a.fn()());
-    console.log(a.fn()() == (a.fn())());
-    console.log(a.fn().call(this));
-    console.log(a.fn().call(a));
+    console.log(a.fn());  // ƒ () {return this.x }
+    console.log((a.fn())());  // 20
+    console.log(a.fn()());  //20
+    console.log(a.fn()() == (a.fn())());  //true
+    console.log(a.fn().call(this)); //20
+    console.log(a.fn().call(a));  //15
+
+    function  outer(){
+      let counter = 0
+      function inner(){
+        counter++
+        console.log(counter)
+        return counter
+      }
+      return inner
+    }
+
+    const fn = outer()
+    console.log(fn())
+    console.log(fn())
   </script>
 </body>
 
