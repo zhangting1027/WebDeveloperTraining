@@ -10,4 +10,4 @@
     1.4  进行拍照，拍照完成后，上传照片到云服务器，并获取相下载二维码
     1.5  用户微信手机扫码访问下载照片页面
 
-    ![业务流程图](/02-Bussiness/assets/QA_Photing_flow.png)
+    ![业务流程图](https://raw.githubusercontent.com/troncell/WebDeveloperTraining/e956fa834ca38a20a323f26eaf8f8c8618f00224/02-Bussiness/assests/QA_Photing_flow.png)
