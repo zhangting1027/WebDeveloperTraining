@@ -1,0 +1,13 @@
+# 用VUE(H5 + Javascript + css) + Electron 开发居于SensingStoreCloud的答题拍照互动。 
+
+1. 业务流程说明及接口简介
+
+
+
+    1.1 初始化本地配置（先从SenisngStoreCLoud建立相应的活动，获取活动游戏的SecurityKey） 
+    1.2 从SensingStoreCloud平台获取，答题数据，进行答题 
+    1.3  答题完成后，提交答题数据至云平台
+    1.4  进行拍照，拍照完成后，上传照片到云服务器，并获取相下载二维码
+    1.5  用户微信手机扫码访问下载照片页面
+
+    ![业务流程图](/02-Bussiness/assets/QA_Photing_flow.png)

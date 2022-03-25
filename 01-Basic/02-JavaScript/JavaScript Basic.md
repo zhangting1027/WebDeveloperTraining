@@ -39,3 +39,7 @@
 
     [JavaScript animations](https://javascript.info/js-animation)
 
+6. NetWork Request
+
+    [Network requests](https://javascript.info/network)
+
