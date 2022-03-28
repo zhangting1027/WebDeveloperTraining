@@ -8,10 +8,17 @@
 
 
 1. Debug Javascript
+   
+   * DevTools for pc.
 
-    [Chrome DevTool](https://developer.chrome.com/docs/devtools/)
+        * [Chrome DevTool](https://developer.chrome.com/docs/devtools/)
 
-    [Debug JavaScript](https://developer.chrome.com/docs/devtools/javascript/)
+        * [Debug JavaScript](https://developer.chrome.com/docs/devtools/javascript/)
+   * Console for Mobile Browsers.
+
+        * [Tenecnt - vConsole](https://github.com/Tencent/vConsole)
+
+        * [eruda](https://github.com/liriliri/eruda)
 
     Tasks:
       1. 在Chrome下01-Debug下的index.html,Debug 函数下的this到底是什么对象。
@@ -42,4 +49,20 @@
 6. NetWork Request
 
     [Network requests](https://javascript.info/network)
+
+7. Regular Expression
+
+    [Patterns and flags in details](https://javascript.info/regexp-introduction)
+
+    ```javascript
+    regexp = new RegExp("pattern", "flags");
+    ```
+    And the “short” one, using slashes "/":
+
+    ```javascript
+    regexp = /pattern/; // no flags
+    regexp = /pattern/gmi; // with flags g,m and i (to be covered soon)
+    ```
+
+
 
