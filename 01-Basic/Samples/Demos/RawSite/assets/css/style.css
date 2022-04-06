@@ -73,6 +73,13 @@ nav ul li a{
   margin: 20px 0 10px;
 }
 
+.col-1 h4{
+  font-size: 30px;
+  color: #000;
+  font-weight: 200;
+  margin: 20px 0 10px;
+}
+
 .col-1 p{
   font-size:16px;
 }
