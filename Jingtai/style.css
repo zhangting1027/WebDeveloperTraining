@@ -26,7 +26,6 @@ body{
   height: 100%;
 }
 .right-content{
-  background: green;
   width: 80%;
   height: 100%;
 }
@@ -75,4 +74,532 @@ body{
 
 .page-2 .right{
   
+}
+
+
+
+/* page-project-hk */
+
+.page-project .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project .content .left{
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-project .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project .left .image-1{
+  width: 48% ;
+  object-fit: contain;
+  margin-right: 1%;
+
+}
+
+.page-project .left .right-imgs{
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+  margin-right: 1%;
+  justify-content: space-between;
+}
+
+/* project tecent */
+
+
+.page-project-t .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-t .content .left{
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-project-t .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project-t .left .left-imgs{
+  width: 48% ;
+  object-fit: contain;
+  margin-right: 1%;
+  flex-direction: column;
+  display: flex;
+
+}
+
+.page-project-t .left .right-imgs{
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+
+/* project f */
+
+
+.page-project-f .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-f .content .left{
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-project-f .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project-f .left .left-imgs{
+  width: 48% ;
+  object-fit: contain;
+  margin-right: 1%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.page-project-f .left .left-imgs img{
+  margin-bottom: 15px;
+}
+
+
+.page-project-f .left .right-imgs{
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+.page-project-f .left .right-imgs img{
+  margin-bottom: 15px;
+}
+
+.page-project-f .right .splitline{
+  width: 30vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 0;
+  top: -2vh;
+  background-color: #43ff62;
+}
+
+
+
+/* Prject - Milano Design Film Festival */
+
+.page-project-m .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-m .content .left{
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-project-m .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project-m .left .left-imgs{
+  width: 98% ;
+  object-fit: contain;
+  margin-right: 1%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.page-project-m .left .left-imgs img{
+  margin-bottom: 15px;
+}
+
+
+.page-project-m .left .right-imgs{
+  display: flex;
+  width: 0%;
+  flex-direction: column;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+
+.page-project-m .left .bottom-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-project-m .left .right-imgs img{
+  margin-bottom: 15px;
+}
+
+.page-project-m .left .bottom-imgs img{
+  flex:1;
+}
+
+.page-project-m .right .splitline{
+  width: 30vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 0;
+  top: -2vh;
+  background-color: #43ff62;
+}
+
+/* Carmina Campus */
+
+.page-project-car .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-car .content .left{
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-project-car .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project-car .left .left-imgs{
+  width: 98% ;
+  object-fit: contain;
+  margin-right: 1%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.page-project-car .left .left-imgs img{
+  margin-bottom: 15px;
+}
+
+
+.page-project-car .left .right-imgs{
+  display: flex;
+  width: 0%;
+  flex-direction: column;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+
+.page-project-car .left .bottom-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-project-car .left .right-imgs img{
+  margin-bottom: 15px;
+}
+
+.page-project-car .left .bottom-imgs img{
+  flex:1;
+}
+
+.page-project-car .right .splitline{
+  width: 30vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 0;
+  top: -2vh;
+  background-color: #43ff62;
+}
+
+
+/* nonno */
+
+.page-project-nonno .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-nonno .content .left{
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-project-nonno .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project-nonno .left .left-imgs{
+  width: 98% ;
+  object-fit: contain;
+  margin-right: 1%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.page-project-nonno .left .left-imgs img{
+  margin-bottom: 15px;
+}
+
+
+.page-project-nonno .left .right-imgs{
+  display: flex;
+  width: 0%;
+  flex-direction: column;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+
+.page-project-nonno .left .bottom-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-project-nonno .left .right-imgs img{
+  margin-bottom: 15px;
+}
+
+.page-project-nonno .right .splitline{
+  width: 30vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 0;
+  top: -2vh;
+  background-color: #43ff62;
+}
+
+/* WanDiary Project @ Camplus */
+
+.page-project-wan .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-wan .content .left{
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-project-wan .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project-wan .left .left-imgs{
+  width: 98% ;
+  object-fit: contain;
+  margin-right: 1%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.page-project-wan .left .left-imgs img{
+  margin-bottom: 15px;
+}
+
+
+.page-project-wan .left .right-imgs{
+  display: flex;
+  width: 0%;
+  flex-direction: column;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+
+.page-project-wan .left .bottom-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-project-wan .left .right-imgs img{
+  margin-bottom: 15px;
+}
+
+.page-project-wan .right .splitline{
+  width: 30vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 0;
+  top: -2vh;
+  background-color: #43ff62;
+}
+
+
+/* Beijing Desgin Week */
+
+.page-project-bj .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-bj .content .left{
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-project-bj .content .right{
+  width:40%;
+  background:red;
+}
+
+.page-project-bj .left .top-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  width: 100%;
+}
+
+.page-project-bj .left  img{
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+
+.page-project-bj .left .top-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+
+.page-project-bj .left .bottom-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+.page-project-bj .right .splitline{
+  width: 30vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 0;
+  top: -2vh;
+  background-color: #43ff62;
+}
+
+
+
+/* International Kids Design Week (BeiJing) */
+
+.page-project-kid .content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-project-kid .content .left{
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-project-kid .content .right{
+  width:40%;
+}
+
+.page-project-kid .left .top-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  width: 100%;
+}
+
+.page-project-kid .left  img{
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+
+.page-project-kid .left .top-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+}
+
+
+.page-project-kid .left .bottom-imgs{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  justify-content: space-between;
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.page-project-kid .right .splitline{
+  width: 30vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 0;
+  top: -2vh;
+  background-color: #43ff62;
 }
