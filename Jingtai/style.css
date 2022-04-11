@@ -1,0 +1,78 @@
+:root{
+  --normal-font-size:20px
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.left-content{
+  background: red;
+  width: 20%;
+  height: 100%;
+}
+.right-content{
+  background: green;
+  width: 80%;
+  height: 100%;
+}
+
+.page{
+  min-height: 100vh;
+  padding: 12px;
+}
+
+
+.logo{
+  width: 135px;
+  margin: 15px 0px;
+}
+
+.slogan{
+  font-size: var(--normal-font-size);
+}
+
+.page-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -10%;
+
+}
+
+/* page 2 */
+
+.page-2 .sub-title{
+  color: rgb(147, 147, 147);
+}
+
+.page-2 .content{
+  display: flex;
+}
+
+.page-2 .content .left{
+  width:50%;
+}
+
+.page-2 .content .right{
+  width:50%;
+  background:red;
+}
+
+.page-2 .right{
+  
+}
