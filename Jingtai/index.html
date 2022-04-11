@@ -523,15 +523,53 @@
       </div>
     </div>
   </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
   <script>
+
+    //active
+    $(document).ready(function () {
+            let menuScrollTimer = null;
+            $(".navMenu a").click(function (e) {
+                // Prevent default behaviour ( scroll to element )
+                e.preventDefault();
+                if (menuScrollTimer === null) {
+                    // Highlight the clicked item
+                    $('.navMenu a.active').removeClass('active');
+                    $(this).addClass('active');
+                    // Smooth scroll to the target section
+                    let target = $(this).attr('href');
+                    $('html, body').animate({ scrollTop: $(target).offset().top + 5 }, 1050);
+                    // Set `menuScrollTimer` timer
+                    // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+                    // This will also prevent the scroll logic from running
+                    menuScrollTimer = setTimeout(function () {
+                        clearTimeout(menuScrollTimer);
+                        menuScrollTimer = null;
+                    }, 1050);
+                }
+            });
+
+            $(window).scroll(function (e) {
+                // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+                if (menuScrollTimer === null) {
+                    let windowTop = $(this).scrollTop();
+
+                    $('.navMenu a').each(function (event) {
+                        if (windowTop >= $($(this).attr('href')).offset().top - 100) {
+                            $('.navMenu .active').removeClass('active');
+                            $(this).addClass('active');
+                        }
+                    });
+                }
+            });
+        });
     // All animations will take exactly 500ms
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 500,
-      speedAsDuration: true,
-      easing: 'easeInOutQuart'
-    });
+    // var scroll = new SmoothScroll('a[href*="#"]', {
+    //   speed: 500,
+    //   speedAsDuration: true,
+    //   easing: 'easeInOutQuart'
+    // });
   </script>
 
 </body>
