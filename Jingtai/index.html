@@ -51,7 +51,7 @@
 
 
       <!-- International Kids Design Week (BeiJing) -->
-      <div class="page page-project-kid">
+      <div id="projects-start" class="page page-project-kid">
         <div class="content">
           <div class="left">
             <img src="assets/img/kid_01.png"  alt="">
@@ -280,6 +280,15 @@
 
     </div>
   </div>
-  
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    // All animations will take exactly 500ms
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true,
+      easing: 'easeInOutQuart'
+    });
+  </script>
 </body>
 </html>
