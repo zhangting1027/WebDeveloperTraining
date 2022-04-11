@@ -1,5 +1,7 @@
 :root{
-  --normal-font-size:20px
+  --normal-font-size:38px;
+  --title-font-size: 30px;
+  --info-font-size: 28px
 }
 
 body{
@@ -72,17 +74,23 @@ body{
   padding: 12px;
 }
 
-.page .right .title{
+.page .right .titles{
+  display: block;
   color:#000;
+  font-size: var(--title-font-size);
+  border-bottom: 5px solid #43ff62;
 }
 
 .page .right .description{
-  color:#efefef;
+  margin-top: 30px;
+  font-size: var(--info-font-size);
+  display: block;
+  color: #666;
 }
 
 
 .logo{
-  width: 135px;
+  width: 270px;
   margin: 15px 0px;
 }
 
@@ -96,49 +104,44 @@ body{
   justify-content: center;
   margin-left: -10%;
   position: relative;
-  margin-top: -30vh;
 }
 
 /* page 2 */
 .page-2 .logo {
-  position: relative;
-  top: 7vh;
-  left: -3vw;
-  width: 20vw;
-  height: 20vh;
+  width: 270px;
 }
 .page-2 .sub-title{
   color: rgb(147, 147, 147);
-  font-size: 30pt;
-  font-family: "Helvetica Neue";
+  font-size: var(--title-font-size);
+  
   margin: 4vh 0;
 }
 .page-2 .slogan{
-  font-size: 35pt;
-  font-family: "Helvetica Neue";
+  font-size: var(--normal-font-size);
+  
   z-index: 20;
   position: relative;
   top: 0vh;
   left: 0;
 }
 .page-2 .description {
-  font-size: 30pt;
-  font-family: "Helvetica Neue";
+  font-size: var(--title-font-size);
+  
 }
 .page-2 .content{
   display: flex;
+  flex-direction: column;
   position: relative;
 }
-
-.page-2 .content .left{
+.page-2 .content .top {
+  display: flex;
+}
+.page-2 .content .top .left{
   width: 65%;
 }
 
 /* 最右侧盒子 */
-.page-2 .content .right{
-  position: absolute;
-  top:0;
-  left: 50vw;
+.page-2 .content .top .right{
   width:35%;
 }
 .page-2 .content .right .head {
@@ -148,12 +151,17 @@ body{
 }
 .page-2 .content .right .head h2 {
   z-index: 10;
-  font-family: "Helvetica Neue";
+  font-size: var(--title-font-size);
 }
 .page-2 .content .right .title {
   margin-top: 5vh;
   display: flex;
   justify-content: space-around;
+  /* font-size: var(--title-font-size); */
+}
+.page-2 .content .right .title h2 {
+  font-size: var(--title-font-size);
+  font-weight: normal;
 }
 /* 背景线 */
 .page-2 .content .right .head .bgline {
@@ -166,27 +174,32 @@ body{
 }
 /* about bottom部分 */
 .page-2 .content .bottom{
-  position: absolute;
-  top:120vh;
-  left: 0;
   width:100%;
-}
-.page-2 .content .bottom .head{
-  font-size: 21pt;
-  font-family: "Helvetica Neue";
-  font-weight: bold;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 40vh;
+  margin-top: 645px;
 }
-.page-2 .content .bottom .imgbox {
-  width: 1451px;
-  height: 471px;
-  margin-top: -38vh;
+.page-2 .content .bottom .left{
+  width: 50%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
-.page-2 .content .bottom .imgbox img {
+.page-2 .content .bottom .left h5 {
+  margin: 0 60px;
+  font-size: var(--title-font-size);
+}
+.page-2 .content .bottom .right h5 {
+  margin: 0 60px;
+  font-size: var(--title-font-size);
+}
+.page-2 .content .bottom .left img {
+  transform: scale(0.8);
+}
+.page-2 .content .bottom .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.page-2 .content .bottom .right img {
   transform: scale(0.8);
 }
 
@@ -211,7 +224,8 @@ body{
 
 .page-project .content .right{
   width:40%;
-  background:red;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-project .left .image-1{
@@ -243,11 +257,6 @@ body{
   justify-content: space-between;
 }
 
-.page-project-t .content .right{
-  width:40%;
-  background:red;
-}
-
 .page-project-t .left .left-imgs{
   width: 48% ;
   object-fit: contain;
@@ -264,6 +273,12 @@ body{
   margin-right: 1%;
   justify-content: space-between;
   object-fit: contain;
+}
+.page-project-t .content .right{
+  display: block;
+  width:40%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -283,7 +298,7 @@ body{
 
 .page-project-f .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-f .left .left-imgs{
@@ -339,7 +354,7 @@ body{
 
 .page-project-m .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-m .left .left-imgs{
@@ -408,7 +423,6 @@ body{
 
 .page-project-car .content .right{
   width:40%;
-  background:red;
 }
 
 .page-project-car .left .left-imgs{
@@ -478,7 +492,7 @@ body{
 
 .page-project-nonno .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-nonno .left .left-imgs{
@@ -543,7 +557,7 @@ body{
 
 .page-project-wan .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-wan .left .left-imgs{
@@ -610,7 +624,7 @@ body{
 
 .page-project-bj .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-bj .left .top-imgs{
@@ -728,11 +742,11 @@ body{
 
 /* publication */
 /* 右边内容区域  rightmain */
+.page-4 {
+  margin-top: 193px;
+}
 .page-4 .box {
-  position: relative;
-  top: 200vh;
-  left: 0vw;
-  width: 75vw;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -750,7 +764,7 @@ body{
 /* 书 */
 .page-4 .box .bookbox .book {
   width: 269px;
-  height: 398px;
+  object-fit: contain;
 }
 .page-4 .box .bookbox .book img {
   width: 100%;
@@ -762,19 +776,19 @@ body{
   margin-left: 2vw;
 }
 .page-4 .box .bookbox .bookInfo span:first-child{
-  font-family: "Helvetica Neue";
+  
   font-weight: bold;
   font-size: 21pt;
 }
 .page-4 .box .bookbox .bookInfo .info{
-  font-family: "Helvetica Neue";
+  
   color: gray;
   font-size: 18pt;
   display: block;
   margin-top: 1vh;
 }
 .page-4 .box .bookbox .bookInfo .writer{
-  font-family: "Helvetica Neue";
+  
   color: gray;
   font-size: 16pt;
   display: block;
@@ -793,28 +807,24 @@ body{
 
 /* people */
 .page-5 .box {
-  position: relative;
-  top: 230vh;
-  left: 0vw;
+  margin-top: 30vh;
   width: 75vw;
+  display: flex;
   /* height: 100vh; */
 }
 .page-5 .box .photo {
-  position: absolute;
-  top: 2vh;
   width: 218px;
-  height: 278px;
+  object-fit: contain;
   /* margin-left: 8vw; */
 }
 .page-5 .box .photo img {
   width: 100%;
-  height: 100%;
 }
 .page-5 .box .jieshao {
   margin-left: 2vw;
   position: relative;
-  left: 14vw;
-  top: 0vh;
+  left: 46px;
+  top: 0;
   width: 60%;
   height: 100%;
   display: flex;
@@ -822,7 +832,7 @@ body{
   /* justify-content: flex-start; */
 }
 .page-5 .box .jieshao .xinxi .name {
-  font-size: 21pt;
+  font-size: 22px;
   font-weight: bold;
   margin-left: 0;
   position: relative;
@@ -837,8 +847,8 @@ body{
   background-color: #43ff62;
 }
 .page-5 .box .jieshao .xinxi .jianjie {
-  line-height: 5vh;
-  font-size: 18pt;
+  line-height: 33PX;
+  font-size: 18PX;
   font-weight: light;
   font-family: 'Helvetica Neue';
 }
@@ -846,8 +856,9 @@ body{
   margin-top: 2vh;
   display: flex;
   flex-direction: column;
-  font-size: 18pt;
-  font-weight: light;
+  font-size: 18PX;
+  line-height: 17px;
+  font-weight: 100;
   font-family: 'Helvetica Neue';
 }
 .page-5 .box .jieshao .xinxi .xueli span {
@@ -857,7 +868,7 @@ body{
   margin-top: 2vh;
 }
 .page-5 .box .jieshao .member .title {
-  font-size: 21pt;
+  font-size: 24px;
   font-weight: bold;
   position: relative;
 }
@@ -871,7 +882,7 @@ body{
   background-color: #43ff62;
 }
 .page-5 .box .jieshao .member .memberList {
-  font-size: 18pt;
+  font-size: 20px;
   font-weight: thin;
   display: flex;
   flex-wrap: wrap;
@@ -886,7 +897,7 @@ body{
   margin-top: 2vh;
 }
 .page-5 .box .jieshao .friends .title {
-  font-size: 21pt;
+  font-size: 24px;
   font-weight: bold;
   position: relative;
 }
@@ -900,7 +911,7 @@ body{
   background-color: #43ff62;
 }
 .page-5 .box .jieshao .friends .friendsList {
-  font-size: 18pt;
+  font-size: 20px;
   font-weight: thin;
   display: flex;
   flex-wrap: wrap;
@@ -995,7 +1006,7 @@ body{
 
 .page-project .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project .left .image-1{
@@ -1029,7 +1040,7 @@ body{
 
 .page-project-t .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-t .left .left-imgs{
@@ -1067,7 +1078,7 @@ body{
 
 .page-project-f .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-f .left .left-imgs{
@@ -1123,7 +1134,7 @@ body{
 
 .page-project-m .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-m .left .left-imgs{
@@ -1192,7 +1203,7 @@ body{
 
 .page-project-car .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-car .left .left-imgs{
@@ -1262,7 +1273,7 @@ body{
 
 .page-project-nonno .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-nonno .left .left-imgs{
@@ -1327,7 +1338,7 @@ body{
 
 .page-project-wan .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-wan .left .left-imgs{
@@ -1394,7 +1405,7 @@ body{
 
 .page-project-bj .content .right{
   width:40%;
-  background:red;
+  
 }
 
 .page-project-bj .left .top-imgs{
