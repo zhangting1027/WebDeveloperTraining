@@ -35,6 +35,14 @@ body{
   padding: 12px;
 }
 
+.page .right .title{
+  color:#000;
+}
+
+.page .right .description{
+  color:#efefef;
+}
+
 
 .logo{
   width: 135px;
