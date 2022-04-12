@@ -69,7 +69,6 @@ body{
 .navMenu a:hover{
   color: #43ff62;
 }
-
 .active::before{
   padding: 4px;
   content: '';
