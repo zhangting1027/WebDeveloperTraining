@@ -56,7 +56,7 @@ body{
 .navMenu {
   position: sticky;
   top: 10vh;
-  left: 80px;
+  left: 100px;
   width: 10vw;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,8 @@ body{
   color: #43ff62;
 }
 .active::before{
-  padding: 4px;
+  padding: 1px 15px 0px 4px;
+  margin-right: 10px;
   content: '';
   background:#43ff62;
 }
@@ -134,12 +135,12 @@ body{
 }
 .page-2 .sub-title{
   color: rgb(147, 147, 147);
-  font-size: var(--info-font-size);
-  font-family: 'HelveticaNeue-MediumItalic';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: medium;
   margin: 4vh 0;
 }
 .page-2 .slogan{
-  font-size: var(--normal-font-size);
   font-family: 'HelveticaNeue-MediumItalic';
   z-index: 20;
   position: relative;
@@ -147,7 +148,7 @@ body{
   left: 0;
 }
 .page-2 .description {
-  font-size: var(--info-font-size);
+  font-size: 24px;
   font-family: 'HelveticaNeue-MediumItalic';
 }
 .page-2 .content{
@@ -159,12 +160,13 @@ body{
   display: flex;
 }
 .page-2 .content .top .left{
-  width: 65%;
+  width: 50%;
 }
 
 /* 最右侧盒子 */
 .page-2 .content .top .right{
   width:35%;
+  margin-left: 40px;
 }
 .page-2 .content .right .head {
   position: relative;
@@ -180,10 +182,10 @@ body{
   margin-top: 5vh;
   display: flex;
   justify-content: space-around;
-  /* font-size: var(--title-font-size); */
+  font-family: 'HelveticaNeue-MediumItalic';
 }
 .page-2 .content .right .title h2 {
-  font-size: var(--title-font-size);
+  font-size: 24px;
   font-weight: normal;
   font-family: 'HelveticaNeue-MediumItalic';
 }
@@ -191,7 +193,7 @@ body{
 .page-2 .content .right .head .bgline {
   position: absolute;
   left: 2vw;
-  top: 1.3vh;
+  top: 2.6vh;
   width: 23vw;
   height: 0.5vh;
   background-color: #43ff62;
@@ -250,6 +252,7 @@ body{
   width:40%;
   display: flex;
   flex-direction: column;
+  margin-left: 26px;
 }
 
 .page-project .left .image-1{
@@ -303,6 +306,7 @@ body{
   width:40%;
   display: flex;
   flex-direction: column;
+  margin-left: 26px;
 }
 
 
@@ -322,7 +326,7 @@ body{
 
 .page-project-f .content .right{
   width:40%;
-  
+  margin-left: 26px;
 }
 
 .page-project-f .left .left-imgs{
@@ -378,7 +382,7 @@ body{
 
 .page-project-m .content .right{
   width:40%;
-  
+  margin-left: 26px;
 }
 
 .page-project-m .left .left-imgs{
@@ -447,6 +451,7 @@ body{
 
 .page-project-car .content .right{
   width:40%;
+  margin-left: 26px;
 }
 
 .page-project-car .left .left-imgs{
@@ -516,7 +521,7 @@ body{
 
 .page-project-nonno .content .right{
   width:40%;
-  
+  margin-left: 26px;
 }
 
 .page-project-nonno .left .left-imgs{
@@ -581,7 +586,7 @@ body{
 
 .page-project-wan .content .right{
   width:40%;
-  
+  margin-left: 26px;
 }
 
 .page-project-wan .left .left-imgs{
@@ -648,7 +653,7 @@ body{
 
 .page-project-bj .content .right{
   width:40%;
-  
+  margin-left: 26px;
 }
 
 .page-project-bj .left .top-imgs{
@@ -714,6 +719,7 @@ body{
 
 .page-project-kid .content .right{
   width:40%;
+  margin-left: 26px;
 }
 
 .page-project-kid .left .top-imgs{
@@ -801,20 +807,19 @@ body{
   font-family: 'HelveticaNeue-bold';
 }
 .page-4 .box .bookbox .bookInfo span:first-child{
-  font-size: 20pt;
+  font-size: 22px;
   font-weight: bold;
 }
 .page-4 .box .bookbox .bookInfo .info{
-  
   color: gray;
-  font-size: 18pt;
+  font-size: 18px;
   display: block;
   margin-top: 1vh;
 }
 .page-4 .box .bookbox .bookInfo .writer{
   
   color: gray;
-  font-size: 16pt;
+  font-size: 16px;
   display: block;
   position: relative;
 }
