@@ -56,7 +56,7 @@ body{
 .navMenu {
   position: sticky;
   top: 10vh;
-  left: 100px;
+  left: 80px;
   width: 10vw;
   display: flex;
   flex-direction: column;
@@ -69,25 +69,41 @@ body{
   font-family: 'Helvetica Neue';
   font-size: 18px;
   font-weight: normal;
+  display: inline-block;
 }
 .navMenu a:hover{
   color: #43ff62;
 }
+
 .navMenu a:active{
   font-family: 'Helvetica Neue';
   font-size: 22px;
   font-weight: bold;
 }
+
+a.active{
+  font-family: 'HelveticaNeue-Medium';
+  font-weight: bold;
+}
+
+a::before {
+  position: relative;
+  left: -10px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  content: '';
+  background: #fff;
+}
+
 .active::before {
   position: relative;
-  left: -25px;
-  top: 17px;
-  display: block;
+  left: -10px;
+  display: inline-block;
   width: 12px;
   height: 12px;
   content: '';
   background: #43ff62;
-  font-family: 'HelveticaNeue-Medium';
 }
 
 
