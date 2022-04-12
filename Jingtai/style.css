@@ -49,13 +49,6 @@ body{
   margin: 0px 20px;
 }
 /* menu */
-
-.active {
-  margin-left: 5px;
-  /* background:#43ff62; */
-  color:#43ff62;
-}
-
 .navMenu {
   position: fixed;
   top: 15vh;
@@ -77,16 +70,12 @@ body{
   color: #43ff62;
 }
 
-.active{
-  color: #43ff62;
+.active::before{
+  padding: 4px;
+  content: '';
+  background:#43ff62;
 }
-/* .navMenu a:active {
-  background-color: #43ff62;;
-  position: relative;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-} */
+
 .right-content{
   width: 80%;
   height: 100%;
