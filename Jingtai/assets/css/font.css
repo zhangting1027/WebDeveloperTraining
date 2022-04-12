@@ -6,6 +6,19 @@
 
 @font-face {
   font-family: 'Helvetica Neue';
+  src: url('./font/HelveticaNeue-Bold-02.ttf');
+  font-style:bold;
+};
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./font/HelveticaNeue-Light-08.ttf');
+  font-weight:lighter;
+};
+
+
+@font-face {
+  font-family: 'Helvetica Neue';
   src: url('./font/HelveticaNeue-BoldItalic-04.ttf');
   font-style:italic;
   font-weight:bold;
@@ -14,6 +27,6 @@
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./font/HelveticaNeue-Medium-11.ttf');
-  font-weight: medium;
+  font-weight: normal;
 }
 
