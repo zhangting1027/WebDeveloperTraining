@@ -73,12 +73,23 @@ body{
 .navMenu a:hover{
   color: #43ff62;
 }
-.active::before{
-  padding: 1px 15px 0px 4px;
-  margin-right: 10px;
-  content: '';
-  background:#43ff62;
+.navMenu a:active{
+  font-family: 'Helvetica Neue';
+  font-size: 22px;
+  font-weight: bold;
 }
+.active::before {
+  position: relative;
+  left: -25px;
+  top: 17px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: '';
+  background: #43ff62;
+  font-family: 'HelveticaNeue-Medium';
+}
+
 
 
 .page{
@@ -836,7 +847,7 @@ body{
 
 /* people */
 .page-5 .box {
-  margin-top: 30vh;
+  margin-top: 26vh;
   width: 75vw;
   display: flex;
   /* height: 100vh; */
