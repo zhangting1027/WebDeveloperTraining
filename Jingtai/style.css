@@ -988,12 +988,11 @@ a::before {
 
 /* Contact */
 .page-contact .box {
+  margin-top: 270px;
   position: relative;
   display: flex;
 }
-.page-contact .box .qrcode {
 
-}
 .page-contact .box .qrcode img {
   width: 100%;
   object-fit: contain;
