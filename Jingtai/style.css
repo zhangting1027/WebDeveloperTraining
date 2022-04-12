@@ -29,19 +29,19 @@ body{
 }
 /* 最左侧导航条 */
 .navInfo {
-  width: 100%;
+  width: 5000vh;
   height: 6vh;
   line-height: 5vh;
   z-index: 10;
   position: absolute;
   top: 100vh;
-  left: 3vw;
+  left: 55px;
   background: #43ff62;
   transform: rotate(90deg);
   transform-origin: top left;
   font-size: 36pt;
   font-weight: light;
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue1';
   display: flex;
   justify-content: flex-start;
 } 
@@ -52,7 +52,8 @@ body{
 
 .active {
   margin-left: 5px;
-  background:#43ff62;
+  /* background:#43ff62; */
+  color:#43ff62;
 }
 
 .navMenu {
@@ -77,18 +78,15 @@ body{
 }
 
 .active{
-  margin-left: 5px;
-  width: 5px;
-  height: 5px;
-  background-color: #43ff62;
+  color: #43ff62;
 }
-.navMenu a:active {
+/* .navMenu a:active {
   background-color: #43ff62;;
   position: relative;
   left: 5px;
   width: 10px;
   height: 10px;
-}
+} */
 .right-content{
   width: 80%;
   height: 100%;
@@ -102,6 +100,8 @@ body{
 .page .right .titles{
   display: block;
   color:#000;
+  font-family: 'HelveticaNeue-bold';
+  font-weight: bold;
   font-size: var(--title-font-size);
   border-bottom: 5px solid #43ff62;
 }
@@ -132,26 +132,29 @@ body{
 }
 
 /* page 2 */
+#about {
+  position: relative;
+}
 .page-2 .logo {
   width: 270px;
 }
 .page-2 .sub-title{
   color: rgb(147, 147, 147);
-  font-size: var(--title-font-size);
-  
+  font-size: var(--info-font-size);
+  font-family: 'HelveticaNeue-MediumItalic';
   margin: 4vh 0;
 }
 .page-2 .slogan{
   font-size: var(--normal-font-size);
-  
+  font-family: 'HelveticaNeue-MediumItalic';
   z-index: 20;
   position: relative;
   top: 0vh;
   left: 0;
 }
 .page-2 .description {
-  font-size: var(--title-font-size);
-  
+  font-size: var(--info-font-size);
+  font-family: 'HelveticaNeue-MediumItalic';
 }
 .page-2 .content{
   display: flex;
@@ -177,6 +180,7 @@ body{
 .page-2 .content .right .head h2 {
   z-index: 10;
   font-size: var(--title-font-size);
+  font-family: 'HelveticaNeue-bold';
 }
 .page-2 .content .right .title {
   margin-top: 5vh;
@@ -187,6 +191,7 @@ body{
 .page-2 .content .right .title h2 {
   font-size: var(--title-font-size);
   font-weight: normal;
+  font-family: 'HelveticaNeue-MediumItalic';
 }
 /* 背景线 */
 .page-2 .content .right .head .bgline {
@@ -799,11 +804,11 @@ body{
   width: 20vw;
   height: 14vh;
   margin-left: 2vw;
+  font-family: 'HelveticaNeue-bold';
 }
 .page-4 .box .bookbox .bookInfo span:first-child{
-  
+  font-size: 20pt;
   font-weight: bold;
-  font-size: 21pt;
 }
 .page-4 .box .bookbox .bookInfo .info{
   
@@ -874,8 +879,7 @@ body{
 .page-5 .box .jieshao .xinxi .jianjie {
   line-height: 33PX;
   font-size: 18PX;
-  font-weight: light;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeue-Light';
 }
 .page-5 .box .jieshao .xinxi .xueli {
   margin-top: 2vh;
