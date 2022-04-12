@@ -21,22 +21,29 @@ body{
   box-sizing: border-box;
 }
 .left-content{
-  width: 20%;
+  width: 18%;
   position: relative;
 }
+
+
+.right-content{
+  width: 82%;
+  height: 100%;
+}
+
 /* 最左侧导航条 */
 .navInfo {
-  height: 136px;
+  height: 135px;
   z-index: 10;
   position: absolute;
   top: 100vh;
-  left: 58px;
+  left: 55px;
   background: #43ff62;
   transform: rotate(90deg);
   transform-origin: top left;
   font-size: 36px;
   font-weight: lighter;
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue1';
   display: flex;
   justify-content: flex-start;
   text-transform: uppercase;
@@ -46,12 +53,6 @@ body{
   margin: 0px 20px;
 }
 /* menu */
-
-.active {
-  margin-left: 5px;
-  background:#43ff62;
-}
-
 .navMenu {
   position: sticky;
   top: 10vh;
@@ -62,17 +63,22 @@ body{
   justify-content: space-around;
 }
 .navMenu a {
-  margin: 7px 5px;
+  color: #000;
+  margin: 8px 5px;
+  /* margin-left: 5px; */
   font-family: 'Helvetica Neue';
   font-size: 18px;
   font-weight: normal;
 }
-
-
-.right-content{
-  width: 80%;
-  height: 100%;
+.navMenu a:hover{
+  color: #43ff62;
 }
+.active::before{
+  padding: 4px;
+  content: '';
+  background:#43ff62;
+}
+
 
 .page{
   min-height: 100vh;
@@ -80,16 +86,18 @@ body{
 }
 
 .page .right .titles{
-  display: block;
+  display: inline-block;
   color:#000;
-  font-size: var(--title-font-size);
+  font-family: 'HelveticaNeue-bold';
+  font-weight: bold;
+  font-size: 22px;
   border-bottom: 5px solid #43ff62;
 }
 
 .page .right .description{
   margin-top: 30px;
-  font-size: var(--info-font-size);
-  display: block;
+  font-size: 19px;
+  display: inline-block;
   color: #666;
 }
 
@@ -101,6 +109,8 @@ body{
 
 .slogan{
   font-size: var(--normal-font-size);
+  font-style: italic;
+  font-weight: bold;
 }
 
 .page-1{
@@ -112,6 +122,9 @@ body{
 }
 
 /* page 2 */
+#about {
+  position: relative;
+}
 
 .page-2{
   margin-top: 330px;
@@ -121,21 +134,21 @@ body{
 }
 .page-2 .sub-title{
   color: rgb(147, 147, 147);
-  font-size: var(--title-font-size);
-  
+  font-size: var(--info-font-size);
+  font-family: 'HelveticaNeue-MediumItalic';
   margin: 4vh 0;
 }
 .page-2 .slogan{
   font-size: var(--normal-font-size);
-  
+  font-family: 'HelveticaNeue-MediumItalic';
   z-index: 20;
   position: relative;
   top: 0vh;
   left: 0;
 }
 .page-2 .description {
-  font-size: var(--title-font-size);
-  
+  font-size: var(--info-font-size);
+  font-family: 'HelveticaNeue-MediumItalic';
 }
 .page-2 .content{
   display: flex;
@@ -161,6 +174,7 @@ body{
 .page-2 .content .right .head h2 {
   z-index: 10;
   font-size: var(--title-font-size);
+  font-family: 'HelveticaNeue-bold';
 }
 .page-2 .content .right .title {
   margin-top: 5vh;
@@ -171,6 +185,7 @@ body{
 .page-2 .content .right .title h2 {
   font-size: var(--title-font-size);
   font-weight: normal;
+  font-family: 'HelveticaNeue-MediumItalic';
 }
 /* 背景线 */
 .page-2 .content .right .head .bgline {
@@ -783,11 +798,11 @@ body{
   width: 20vw;
   height: 14vh;
   margin-left: 2vw;
+  font-family: 'HelveticaNeue-bold';
 }
 .page-4 .box .bookbox .bookInfo span:first-child{
-  
+  font-size: 20pt;
   font-weight: bold;
-  font-size: 21pt;
 }
 .page-4 .box .bookbox .bookInfo .info{
   
@@ -858,8 +873,7 @@ body{
 .page-5 .box .jieshao .xinxi .jianjie {
   line-height: 33PX;
   font-size: 18PX;
-  font-weight: light;
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeue-Light';
 }
 .page-5 .box .jieshao .xinxi .xueli {
   margin-top: 2vh;
@@ -964,6 +978,8 @@ body{
   font-size: 35pt;
   font-family: 'Helvetica Neue';
   font-size: var(--normal-font-size);
+  font-style: italic;
+  font-weight: bold;
 }
 
 
