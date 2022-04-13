@@ -22,4 +22,10 @@ Go to 01-Basic folder for the details. if you handle them, please skip them.
 
 ## TronCell Bussiness Integration
   1. Know the SensingStoreCloud platform.
-  2. Know 
+  2. Know the self-machine product.
+
+## Start working with team
+  1. Discuss features or solutions with team members.
+  2. clear the features and have the common solutions agreed with team members
+  3. Implement new features or fix bugs for prodcuts or projects
+  4. Keep learning, happy coding and improvements everyday
