@@ -1,7 +1,9 @@
 :root{
-  --normal-font-size:38px;
+  --normal-font-size:35px;
   --title-font-size: 30px;
-  --info-font-size: 28px
+  --info-font-size: 28px;
+  --text-font-size: 21px;
+  --text-des-font-size: 18px;
 }
 
 body{
@@ -33,7 +35,7 @@ body{
 
 /* 最左侧导航条 */
 .navInfo {
-  height: 135px;
+  height: 100vh;
   z-index: 10;
   position: absolute;
   top: 100vh;
@@ -43,12 +45,13 @@ body{
   transform-origin: top left;
   font-size: 36px;
   font-weight: lighter;
-  font-family: 'Helvetica Neue1';
+  font-family: 'HelveticaNeue-Light';
   display: flex;
   justify-content: flex-start;
   text-transform: uppercase;
   padding: 10px;
 } 
+
 .navInfo span {
   margin: 0px 20px;
 }
@@ -72,13 +75,18 @@ body{
   display: inline-block;
 }
 .navMenu a:hover{
-  color: #43ff62;
 }
 
-.navMenu a:active{
-  font-family: 'Helvetica Neue';
-  font-size: 22px;
-  font-weight: bold;
+
+
+a:hover::before {
+  position: relative;
+  left: -10px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  content: '';
+  background: #43ff62;
 }
 
 a.active{
@@ -118,13 +126,13 @@ a::before {
   color:#000;
   font-family: 'HelveticaNeue-bold';
   font-weight: bold;
-  font-size: 22px;
+  font-size: var(--text-font-size);
   border-bottom: 5px solid #43ff62;
 }
 
 .page .right .description{
   margin-top: 30px;
-  font-size: 19px;
+  font-size: var(--text-des-font-size);
   display: inline-block;
   color: #666;
 }
@@ -162,9 +170,8 @@ a::before {
 }
 .page-2 .sub-title{
   color: rgb(147, 147, 147);
-  font-size: 24px;
-  font-style: italic;
-  font-weight: medium;
+  font-size: var(--text-font-size);
+  font-weight: normal;
   margin: 4vh 0;
 }
 .page-2 .slogan{
@@ -175,8 +182,9 @@ a::before {
   left: 0;
 }
 .page-2 .description {
-  font-size: 24px;
+  font-size: var(--text-font-size);
   font-family: 'HelveticaNeue-MediumItalic';
+  font-weight: normal;
 }
 .page-2 .content{
   display: flex;
@@ -202,7 +210,7 @@ a::before {
 }
 .page-2 .content .right .head h2 {
   z-index: 10;
-  font-size: var(--title-font-size);
+  font-size: var(--text-font-size);
   font-family: 'HelveticaNeue-bold';
 }
 .page-2 .content .right .title {
@@ -212,7 +220,7 @@ a::before {
   font-family: 'HelveticaNeue-MediumItalic';
 }
 .page-2 .content .right .title h2 {
-  font-size: 24px;
+  font-size: var(--text-font-size);
   font-weight: normal;
   font-family: 'HelveticaNeue-MediumItalic';
 }
@@ -220,8 +228,8 @@ a::before {
 .page-2 .content .right .head .bgline {
   position: absolute;
   left: 2vw;
-  top: 2.6vh;
-  width: 23vw;
+  top: 1.3vh;
+  width: 24vw;
   height: 0.5vh;
   background-color: #43ff62;
 }
@@ -238,11 +246,11 @@ a::before {
 }
 .page-2 .content .bottom .left h5 {
   margin: 0 60px;
-  font-size: var(--title-font-size);
+  font-size: var(--text-font-size);
 }
 .page-2 .content .bottom .right h5 {
   margin: 0 60px;
-  font-size: var(--title-font-size);
+  font-size: var(--text-font-size);
 }
 .page-2 .content .bottom .left img {
   transform: scale(0.8);
@@ -815,6 +823,8 @@ a::before {
   display: flex;
   margin: 2vh 0vw;
   margin-left: 0;
+  margin-right: 20px;
+  margin-top: 126px;
   justify-content: space-between;
 }
 
@@ -828,27 +838,29 @@ a::before {
   height: 100%;
 }
 .page-4 .box .bookbox .bookInfo {
-  width: 20vw;
+  width: 21vw;
   height: 14vh;
-  margin-left: 2vw;
+  margin-right: 18px;
   font-family: 'HelveticaNeue-bold';
 }
 .page-4 .box .bookbox .bookInfo span:first-child{
-  font-size: 22px;
+  font-size: var(--text-font-size);
   font-weight: bold;
 }
 .page-4 .box .bookbox .bookInfo .info{
   color: gray;
-  font-size: 18px;
+  font-size: var(--text-des-font-size);
   display: block;
   margin-top: 1vh;
+  font-family: 'HelveticaNeue-Light';
 }
 .page-4 .box .bookbox .bookInfo .writer{
   
   color: gray;
-  font-size: 16px;
+  font-size: var(--text-des-font-size);
   display: block;
   position: relative;
+  font-family: 'HelveticaNeue-Light';
 }
 /* 线 */
 .page-4 .box .bookbox .bookInfo .line {
@@ -888,10 +900,11 @@ a::before {
   /* justify-content: flex-start; */
 }
 .page-5 .box .jieshao .xinxi .name {
-  font-size: 22px;
+  font-size: var(--text-font-size);
   font-weight: bold;
   margin-left: 0;
   position: relative;
+  font-family: 'HelveticaNeue-bold';
 }
 /* 绿点 */
 .page-5 .box .jieshao .xinxi .green {
@@ -908,7 +921,7 @@ a::before {
   font-family: 'HelveticaNeue-Light';
 }
 .page-5 .box .jieshao .xinxi .xueli {
-  margin-top: 2vh;
+  margin-top: 4vh;
   display: flex;
   flex-direction: column;
   font-size: 18PX;
@@ -920,12 +933,14 @@ a::before {
   margin: 1vh 0;
 }
 .page-5 .box .jieshao .member {
-  margin-top: 2vh;
+  margin-top: 12vh;
 }
 .page-5 .box .jieshao .member .title {
-  font-size: 24px;
+  font-size: var(--text-font-size);
+  font-family: 'HelveticaNeue-bold';
   font-weight: bold;
   position: relative;
+  margin-top: 12vh;
 }
 /* 绿点 */
 .page-5 .box .jieshao .member .green1 {
@@ -945,14 +960,15 @@ a::before {
 .page-5 .box .jieshao .member .memberList span {
   display: flex;
   justify-content: space-between;
-  margin: 2vh 2vw;
+  margin: 4vh 2vw;
 }
 /* friends */
 .page-5 .box .jieshao .friends {
-  margin-top: 2vh;
+  margin-top: 10vh;
 }
 .page-5 .box .jieshao .friends .title {
-  font-size: 24px;
+  font-size: var(--text-font-size);
+  font-family: 'HelveticaNeue-bold';
   font-weight: bold;
   position: relative;
 }
@@ -974,7 +990,7 @@ a::before {
 .page-5 .box .jieshao .friends .friendsList span {
   display: flex;
   justify-content: space-between;
-  margin: 2vh 2vw;
+  margin: 4vh 2vw;
 }
 
 
