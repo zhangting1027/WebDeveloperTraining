@@ -12,13 +12,13 @@ Go to 01-Basic folder for the details. if you handle them, please skip them.
   5. [Angular basic](https://angular.io/)
   6. [wechat miniprogram](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 
-## Finish tasks below in 1-2 weeks
-  1. - [ ] CardUI project, and improve something.
-  2. - [ ] NavUI project, and improve something.
-  3. - [ ] SinglePage project, and improve something.
-  4. - [ ] tronCell website, and improve something, just understand.
-  5. - [ ] troncell miniprogram, and improve something, just understand.
-  6. - [ ] QA Game project,and improve soemthing.
+## Finish tasks below in 1-2 weeks, samples folder for references.
+  1. :fuelpump:- [ ] CardUI project, and improve something.
+  2. :fuelpump:- [ ] NavUI project, and improve something.
+  3. :fuelpump:- [ ] SinglePage project, and improve something.
+  4. :heart:- [ ] tronCell website, and improve something, just understand.
+  5. :heart:- [ ] troncell miniprogram, and improve something, just understand.
+  6. :heart:- [ ] QA Game project,and improve soemthing.
 
 ## TronCell Bussiness Integration
   1. Know the SensingStoreCloud platform.
