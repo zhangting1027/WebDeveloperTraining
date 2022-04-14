@@ -14,26 +14,25 @@
 <body>
   <div class="container">
     <div class="left-content">
-      <!-- 最左侧导航条 -->
-      <div class="navInfo" id="navInfo">
-        <span>About</span><span>About</span><span>About</span><span>About</span><span>About</span><span>About</span><span>About</span><span>About</span><span>About</span><span>About</span><span>About</span><span>About</span>
-        <span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span><span>Project</span>
-        <span>publication</span><span>publication</span><span>publication</span><span>publication</span><span>publication</span><span>publication</span><span>publication</span><span>publication</span>
-        <span>People</span><span>People</span><span>People</span><span>People</span><span>People</span><span>People</span><span>People</span><span>People</span><span>People</span><span>People</span><span>People</span>
-        <span>NetWork</span><span>NetWork</span><span>NetWork</span><span>NetWork</span>
-        <span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </div>
+
 
       <div style="height: 110vh;"></div>
-      <!-- menu -->
-      <div class="navMenu">
-        <a href="#about">About</a>
-        <a href="#projects">Project</a>
-        <a href="#publication">Pubication</a>
-        <a href="#people">People</a>
-        <a href="#network">Network</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <div class="sticky-nav">
+            <!-- 最左侧导航条 -->
+        <div class="navInfo" id="navInfo">
+          <span id="navIndex">About  About  About</span>
+        </div>
+        <!-- menu -->
+        <div class="navMenu">
+          <a href="#about">About</a>
+          <a href="#projects">Project</a>
+          <a href="#publication">Pubication</a>
+          <a href="#people">People</a>
+          <a href="#network">Network</a>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+
     </div>
     <!-- 右边内容 -->
     <div class="right-content">
@@ -542,6 +541,7 @@
     //active
     $(document).ready(function () {
             let menuScrollTimer = null;
+            var navIndex = document.getElementById('navIndex')
             $(".navMenu a").click(function (e) {
                 // Prevent default behaviour ( scroll to element )
                 e.preventDefault();
@@ -551,7 +551,7 @@
                     $(this).addClass('active');
                     // Smooth scroll to the target section
                     let target = $(this).attr('href');
-                    $('html, body').animate({ scrollTop: $(target).offset().top + 5 }, 1050);
+                    $('html, body').animate({ scrollTop: $(target).offset().top + 15 }, 1050);
                     // Set `menuScrollTimer` timer
                     // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
                     // This will also prevent the scroll logic from running
@@ -571,6 +571,12 @@
                         if (windowTop >= $($(this).attr('href')).offset().top - 100) {
                             $('.navMenu .active').removeClass('active');
                             $(this).addClass('active');
+                            let navIndexText = $(this).html();
+                            let finalText = navIndexText
+                            for(let i =0;i < 6;i++){
+                              finalText+="  "+ navIndexText
+                            }
+                            navIndex.innerText = finalText
                         }
                     });
                 }

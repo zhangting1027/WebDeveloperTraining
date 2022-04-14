@@ -6,6 +6,10 @@
   --text-des-font-size: 18px;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   width: 100%;
   min-height: 100vh;
@@ -33,27 +37,43 @@ body{
   height: 100%;
 }
 
+.sticky-nav{
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
+}
+
 /* 最左侧导航条 */
 .navInfo {
-  height: 100vh;
-  z-index: 10;
-  position: absolute;
-  top: 100vh;
-  left: 55px;
-  background: #43ff62;
-  transform: rotate(90deg);
-  transform-origin: top left;
-  font-size: 36px;
-  font-weight: lighter;
-  font-family: 'HelveticaNeue-Light';
-  display: flex;
-  justify-content: flex-start;
-  text-transform: uppercase;
-  padding: 10px;
+    /* position: sticky; */
+    /* height: 100vh; */
+    /* z-index: 10; */
+    top: 0vh;
+    /* left: -66px; */
+    height: 100vh;
+    /* left: 55px; */
+    width: 60px;
+    background: #43ff62;
+    /* transform: rotate(90deg); */
+    font-size: 36px;
+    font-weight: lighter;
+    font-family: 'HelveticaNeue-Light';
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    writing-mode: lr;
+    flex-direction: column;
 } 
 
 .navInfo span {
   margin: 0px 20px;
+  writing-mode:vertical-lr;
+  white-space: pre;
 }
 /* menu */
 .navMenu {
@@ -63,7 +83,8 @@ body{
   width: 10vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-top: 10vh;
 }
 .navMenu a {
   color: #000;
@@ -1000,6 +1021,10 @@ a::before {
 }
 .page-network img {
   width: 38%;
+}
+
+.page-contact {
+height: 105vh;
 }
 
 /* Contact */
