@@ -24,6 +24,7 @@
 @font-face {
   font-family: 'HelveticaNeue-Light';
   src: url('./font/HelveticaNeue-Light-08.ttf');
+  font-weight: lighter;
 }
 @font-face {
   font-family: 'HelveticaNeue-UltraLight';
