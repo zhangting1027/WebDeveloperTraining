@@ -309,6 +309,7 @@ a::before {
   width:60%;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .page-project .content .right{
@@ -778,6 +779,7 @@ a::before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .page-project-kid .content .right{
@@ -792,6 +794,7 @@ a::before {
   justify-content: space-between;
   object-fit: contain;
   width: 100%;
+  overflow: hidden;
 }
 
 .page-project-kid .left  img{
@@ -806,6 +809,7 @@ a::before {
   margin-right: 1%;
   justify-content: space-between;
   object-fit: contain;
+  overflow: hidden;
 }
 
 
@@ -1028,6 +1032,7 @@ a::before {
 }
 .page-network img {
   width: 38%;
+  min-width: 560px;
 }
 
 .page-contact {
@@ -1486,6 +1491,7 @@ height: 105vh;
   justify-content: space-between;
   object-fit: contain;
   width: 100%;
+  overflow: hidden;
 }
 
 .page-project-bj .left  img{
@@ -1500,6 +1506,7 @@ height: 105vh;
   margin-right: 1%;
   justify-content: space-between;
   object-fit: contain;
+  overflow: hidden;
 }
 
 
@@ -1551,6 +1558,7 @@ height: 105vh;
   justify-content: space-between;
   object-fit: contain;
   width: 100%;
+  overflow: hidden;
 }
 
 .page-project-kid .left  img{
@@ -1565,6 +1573,7 @@ height: 105vh;
   margin-right: 1%;
   justify-content: space-between;
   object-fit: contain;
+  overflow: hidden;
 }
 
 
