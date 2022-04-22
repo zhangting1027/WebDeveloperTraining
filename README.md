@@ -5,7 +5,7 @@
 ## Basic Web Technology, must grap all of them! 
 
 Go to 01-Basic folder for the details. if you handle them, please skip them.
-  1. [HTML Basic](https://developer.mozilla.org/en-US/docs/Web/Tutorials)
+  1. [HTML Basic](https://developer.mozilla.org/en-US/docs/Web/Tutorials),[web.dev](https://web.dev/)
   2. [CSS Basic](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started),[CSS Tricks](https://css-tricks.com/)
   3. [Javascript Basic](https://javascript.info)
   4. [Vue basic](https://vuejs.org/tutorial/)
