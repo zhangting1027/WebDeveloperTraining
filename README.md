@@ -18,7 +18,7 @@ Go to 01-Basic folder for the details. if you handle them, please skip them.
   3. - [ ] SinglePage project, and improve something.:fuelpump:
   4. - [ ] tronCell website, and improve something, just understand.:heart:
   5. - [ ] troncell miniprogram, and improve something, just understand.:heart:
-  6. - [ ] QA Game project,and improve soemthing.:heart:
+  6. - [ ] QA Game project,and improve something.:heart:
 
 ## TronCell Bussiness Integration
   1. Know the SensingStoreCloud platform.
