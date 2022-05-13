@@ -5,9 +5,9 @@
 ## Basic Web Technology, must grap all of them! 
 
 Go to 01-Basic folder for the details. if you handle them, please skip them.
-  1. [HTML Basic](https://developer.mozilla.org/en-US/docs/Web/Tutorials)
+  1. [HTML Basic](https://developer.mozilla.org/en-US/docs/Web/Tutorials),[web.dev](https://web.dev/)
   2. [CSS Basic](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started),[CSS Tricks](https://css-tricks.com/)
-  3. [Javascript Basic](https://javascript.info)
+  3. [Javascript Basic](https://javascript.info),learn and play demos at [codepen](https://codepen.io/)
   4. [Vue basic](https://vuejs.org/tutorial/)
   5. [Angular basic](https://angular.io/)
   6. [wechat miniprogram](https://developers.weixin.qq.com/miniprogram/dev/framework/)
@@ -18,7 +18,7 @@ Go to 01-Basic folder for the details. if you handle them, please skip them.
   3. - [ ] SinglePage project, and improve something.:fuelpump:
   4. - [ ] tronCell website, and improve something, just understand.:heart:
   5. - [ ] troncell miniprogram, and improve something, just understand.:heart:
-  6. - [ ] QA Game project,and improve soemthing.:heart:
+  6. - [ ] QA Game project,and improve something.:heart:
 
 ## TronCell Bussiness Integration
   1. Know the SensingStoreCloud platform.

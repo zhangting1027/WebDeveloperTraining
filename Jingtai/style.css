@@ -27,13 +27,13 @@ body{
   box-sizing: border-box;
 }
 .left-content{
-  width: 18%;
+  width: 19%;
   position: relative;
 }
 
 
 .right-content{
-  width: 82%;
+  width: 81%;
   height: 100%;
 }
 
@@ -211,7 +211,7 @@ a::before {
 }
 .page-2 .description {
   font-size: var(--text-font-size);
-  font-family: 'HelveticaNeue-MediumItalic';
+  font-family: 'Helvetica Neue';
   font-weight: normal;
 }
 .page-2 .content{
