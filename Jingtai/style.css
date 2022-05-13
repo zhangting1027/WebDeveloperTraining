@@ -27,7 +27,7 @@ body{
   box-sizing: border-box;
 }
 .left-content{
-  width: 19%;
+  width: 15%;
   position: relative;
 }
 
@@ -54,7 +54,7 @@ body{
     /* left: -66px; */
     height: 100vh;
     /* left: 55px; */
-    width: 60px;
+    width: 46px;
     background: #43ff62;
     /* transform: rotate(90deg); */
     font-size: 36px;
@@ -191,7 +191,7 @@ a::before {
 }
 
 .page-2{
-  margin-top: 330px;
+  
 }
 .page-2 .logo {
   width: 270px;
@@ -265,7 +265,8 @@ a::before {
 .page-2 .content .bottom{
   width:100%;
   display: flex;
-  margin-top: 645px;
+  margin-top: 375px;
+  margin-bottom: 375px;
 }
 .page-2 .content .bottom .left{
   width: 50%;
