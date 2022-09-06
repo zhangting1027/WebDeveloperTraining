@@ -5,6 +5,7 @@
 ## Basic Web Technology, must grap all of them! 
 
 [Annotation Learning](https://chrome.google.com/webstore/detail/liner-search-faster-highl/bmhcbmnbenmcecpmpepghooflbehcack)
+[Javascript Code Style](https://cloud.tencent.com/developer/article/2024461)
 
 Go to 01-Basic folder for the details. if you handle them, please skip them.
   1. [HTML Basic](https://developer.mozilla.org/en-US/docs/Web/Tutorials),[web.dev](https://web.dev/)
