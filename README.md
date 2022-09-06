@@ -4,13 +4,16 @@
 
 ## Basic Web Technology, must grap all of them! 
 
+[Annotation Learning](https://chrome.google.com/webstore/detail/liner-search-faster-highl/bmhcbmnbenmcecpmpepghooflbehcack)
+
 Go to 01-Basic folder for the details. if you handle them, please skip them.
   1. [HTML Basic](https://developer.mozilla.org/en-US/docs/Web/Tutorials),[web.dev](https://web.dev/)
   2. [CSS Basic](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started),[CSS Tricks](https://css-tricks.com/)
   3. [Javascript Basic](https://javascript.info),learn and play demos at [codepen](https://codepen.io/)
   4. [Vue basic](https://vuejs.org/tutorial/)
   5. [Angular basic](https://angular.io/)
-  6. [wechat miniprogram](https://developers.weixin.qq.com/miniprogram/dev/framework/)
+  6. [React basic](https://reactjs.org/)
+  7. [wechat miniprogram](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 
 ## Finish tasks below in 1-2 weeks, samples folder for references.
   1. - [ ] CardUI project, and improve something.:fuelpump:
