@@ -20,9 +20,10 @@ Go to 01-Basic folder for the details. if you handle them, please skip them.
   1. - [ ] CardUI project, and improve something.:fuelpump:
   2. - [ ] NavUI project, and improve something.:fuelpump:
   3. - [ ] SinglePage project, and improve something.:fuelpump:
-  4. - [ ] tronCell website, and improve something, just understand.:heart:
-  5. - [ ] troncell miniprogram, and improve something, just understand.:heart:
-  6. - [ ] QA Game project,and improve something.:heart:
+  4. - [ ] Classic Todo List Demo with vue or react or angular:
+  5. - [ ] tronCell website, and improve something, just understand.:heart:
+  6. - [ ] troncell miniprogram, and improve something, just understand.:heart:
+  7. - [ ] QA Game project,and improve something.:heart:
 
 ## TronCell Bussiness Integration
   1. Know the SensingStoreCloud platform.
