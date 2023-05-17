@@ -4,10 +4,9 @@
 
 
 1.  初始化本地配置（先从SenisngStoreCLoud建立相应的活动，获取活动游戏的SecurityKey，[详细参考文档](https://docs.troncell.com)） 
-2.  从SensingStoreCloud平台获取，答题数据，进行答题 
+2.  从SensingStoreCloud平台获取，答题数据，进行答题，答题完成后，提交答题数据至云平台
 - 测评接口: `https://activity.api.troncell.com/api/services/app/SengsingDevice/GetPapersByTags`
 - subKey: 8fdbb756192b43c09e3a10e7824039e0
-答题完成后，提交答题数据至云平台
 3.  进行拍照，拍照完成后，上传照片到云服务器，并获取相下载二维码
 - 微信Qrcode接口: `https://activity.api.troncell.com/api/UserAction/PostPlayerData4ActionQrcode`
 - QrType: AfterGame
