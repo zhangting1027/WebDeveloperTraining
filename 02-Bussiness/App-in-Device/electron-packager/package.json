@@ -1,0 +1,16 @@
+{
+  "name": "electron-packager",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager": "electron-packager . ceping-app --platform=win32 --arch=x64 --out=./build --electron-version 25.1.1 --app-version 1.0.0 --overwrite --icon=./logo.ico"
+  },
+  "author": "Matthew Gu",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.1.1",
+    "electron-packager": "^17.1.1"
+  }
+}
