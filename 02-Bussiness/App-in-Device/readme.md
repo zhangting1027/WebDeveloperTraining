@@ -8,6 +8,7 @@
 - 测评接口: `https://activity.api.troncell.com/api/services/app/SengsingDevice/GetPapersByTags`
 - tags:'测评'
 - subKey: 8fdbb756192b43c09e3a10e7824039e0
+- 租户：长沙银行
 3.  进行拍照，拍照完成后，上传照片到云服务器，并获取相下载二维码
 - 微信Qrcode接口: `https://activity.api.troncell.com/api/UserAction/PostPlayerData4ActionQrcode`
 - QrType: AfterGame
